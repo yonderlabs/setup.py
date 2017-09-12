@@ -6,11 +6,10 @@ The setup.py script in the `deploy` directory allows you to assembly and install
 It provides two useful behaviours, usually not included in standard setup scripts.
 The first is the ability to produce a Python library which includes a main package and its sub-packages as reported below.
 The second is the use of Cython for compiling the code of the output library.
-Below you can find two different structures that can be used with the supplied `setup.py`. The first one corresponds to a simple project which includes 
-also sub-packages (NOTE: it is possible to handle projects without sub-packages as it is possible to add as many nested sub-packages as you like. 
+Below you can find two different structures that can be used with the supplied `setup.py`. The first one corresponds to a simple project which includes also sub-packages (NOTE: it is possible to handle projects without sub-packages as it is possible to add as many nested sub-packages as you like. 
 Remember, you must add the `__init__.py` file in each package/sub-package folder, otherwise the included modules will not be added to the output library.
 The second example allows for more complex library generation in particular when you want the add different packages under the same 
-"namespace". 
+`namespace`. 
 
 ### First Example
 ```
@@ -61,9 +60,8 @@ git-namespace
 
 ## Usage 
 
-First of all you need to create a project with a directory structure similar to those reported above.   
-You can add as many directory you need in the root as the `bin` in our example. The mandatory elements 
-are `deploy` and `package_name`, in the first example, and also the directory `namespace`, in the second example. 
+First of all, you need to create a project with a directory structure similar to those reported above.   
+You can add as many directories as you need in the root as the `bin` in our example. The mandatory elements are `deploy` and `package_name`, in the first example, and also the directory `namespace`, in the second example. 
 
 Copy the `setup.py` provided in this project into the folder `deploy`.
 Edit each of them, set the variable `PACKAGE_NAME` with the name of the package (`package_nameX`). 
