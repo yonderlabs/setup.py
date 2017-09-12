@@ -2,7 +2,7 @@
 
 #### If you are frustrated by organizing your Python packages with all modules in the same directory, along with the setup.py script, you are the right place.
 
-The setup.py script in the `deploy` directory allows you to assembly and install a structured Python package with pip.
+The setup.py script in the `deploy` directory allows you to generate and install a structured Python package with pip.
 It provides two useful behaviours, usually not included in standard setup scripts.
 The first is the ability to produce a Python library which includes a main package and its sub-packages as reported below.
 The second is the use of Cython for compiling the code of the output library.
